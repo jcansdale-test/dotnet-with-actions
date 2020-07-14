@@ -1,0 +1,14 @@
+on:
+  push:
+
+jobs:
+  global:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run a .NET Core tool
+      run: |
+        dotnet tool install jcansdale/gpr -g
+        gpr
