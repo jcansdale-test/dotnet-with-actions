@@ -10,5 +10,5 @@ jobs:
 
     - name: Run a .NET Core tool
       run: |
-        dotnet tool install jcansdale/gpr -g
+        dotnet tool install gpr -g
         gpr
